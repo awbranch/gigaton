@@ -9,7 +9,7 @@ export function Layout237() {
         <div className="flex flex-col items-center">
           <div className="rb-12 mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
             <p className="mb-3 font-semibold md:mb-4">Accountability</p>
-            <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+            <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl font-serif">
               Carbon Credits You Can Trust
             </h2>
             <p className="md:text-md">
@@ -27,7 +27,7 @@ export function Layout237() {
                   className="size-12"
                 />
               </div>
-              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
+              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl font-serif">
                 Transparency
               </h3>
               <p>
@@ -43,7 +43,7 @@ export function Layout237() {
                   className="size-12"
                 />
               </div>
-              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
+              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl font-serif">
                 Quality
               </h3>
               <p>
@@ -59,7 +59,7 @@ export function Layout237() {
                   className="size-12"
                 />
               </div>
-              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
+              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl font-serif">
                 Community
               </h3>
               <p>

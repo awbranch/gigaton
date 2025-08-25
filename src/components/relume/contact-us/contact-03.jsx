@@ -9,7 +9,7 @@ export function Contact3() {
       <div className="container">
         <div className="mb-8 w-full max-w-lg md:mb-10 lg:mb-12">
           <p className="mb-3 font-semibold md:mb-4">Connect</p>
-          <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+          <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl font-serif">
             Get in Touch
           </h2>
           <p className="md:text-md">

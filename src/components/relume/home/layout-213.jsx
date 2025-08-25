@@ -23,7 +23,7 @@ export function Layout213() {
                 alt="Relume logo"
               />
             </div>
-            <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+            <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl font-serif">
               Why us?
             </h2>
             <p className="md:text-md">
@@ -33,7 +33,11 @@ export function Layout213() {
               scalable, ethical, and accountable.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-              <Button title="Learn More" variant="secondary">
+              <Button
+                title="Learn More"
+                variant="secondary"
+                className="text-black px-4 py-2"
+              >
                 Learn More
               </Button>
             </div>

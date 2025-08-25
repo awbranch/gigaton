@@ -9,7 +9,7 @@ export function Layout254() {
         <div className="mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
             <p className="mb-3 font-semibold md:mb-4">Impact</p>
-            <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+            <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl font-serif">
               Just how big is 1.02Gt?
             </h2>
             <p className="md:text-md">
@@ -28,7 +28,7 @@ export function Layout254() {
                   alt="Relume logo"
                 />
               </div>
-              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
+              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl font-serif">
                 Nearly 3% of all global emissions.
               </h3>
               <p>The world emitted 37.4Gt of C02e in 2023.</p>
@@ -63,7 +63,7 @@ export function Layout254() {
                   alt="Relume logo"
                 />
               </div>
-              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
+              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl font-serif">
                 Annual emissions of Germany and France combined.
               </h3>
               <p>Germany: 695.85MT France: 329.77MT</p>
@@ -76,7 +76,7 @@ export function Layout254() {
                   alt="Relume logo"
                 />
               </div>
-              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
+              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl font-serif">
                 340 coal plants
               </h3>
               <p>An average 500 MW coal plant emits ~3MT CO₂ per year.</p>

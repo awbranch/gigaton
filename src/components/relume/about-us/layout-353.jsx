@@ -10,7 +10,7 @@ export function Layout353() {
         <div className="grid grid-cols-1 items-start gap-y-12 md:grid-flow-row md:grid-cols-2 md:gap-x-12 lg:gap-x-20">
           <div className="static md:sticky md:top-[30%]">
             <p className="mb-3 font-semibold md:mb-4">Values</p>
-            <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+            <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl font-serif">
               We are pragmatic and focused on fixing what's broken.
             </h2>
             <p className="md:text-md">
@@ -28,7 +28,7 @@ export function Layout353() {
                   className="size-12"
                 />
               </div>
-              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
+              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl font-serif">
                 Scalable and Consequential
               </h3>
               <p>
@@ -45,7 +45,7 @@ export function Layout353() {
                   className="size-12"
                 />
               </div>
-              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
+              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl font-serif">
                 High Quality
               </h3>
               <p>
@@ -62,7 +62,7 @@ export function Layout353() {
                   className="size-12"
                 />
               </div>
-              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
+              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl font-serif">
                 Transparent
               </h3>
               <p>
@@ -78,7 +78,7 @@ export function Layout353() {
                   className="size-12"
                 />
               </div>
-              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
+              <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl font-serif">
                 Community Aligned
               </h3>
               <p>

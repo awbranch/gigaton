@@ -11,7 +11,7 @@ export function Header50() {
           <p className="mb-3 font-semibold text-text-alternative md:mb-4">
             Focus
           </p>
-          <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl">
+          <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl font-serif">
             Avoiding Methane Emissions in Southeast Asia is Critical.
           </h1>
           <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
