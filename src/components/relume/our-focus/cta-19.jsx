@@ -16,7 +16,12 @@ export function Cta19() {
             we'd love to share it with you.
           </p>
           <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-            <Button title="Contact us">Contact us</Button>
+            <Button
+              title="Contact us"
+              className="text-white bg-black px-4 py-2"
+            >
+              Contact us
+            </Button>
           </div>
         </div>
       </div>

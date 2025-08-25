@@ -30,7 +30,7 @@ export function Layout239() {
                   className="rounded-image"
                 />
               </div>
-              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl font-serif">
+              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
                 A Massive Carbon Sink
               </h3>
               <p>
@@ -46,7 +46,7 @@ export function Layout239() {
                   className="rounded-image"
                 />
               </div>
-              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl font-serif">
+              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
                 A Methane Hotspot
               </h3>
               <p>
@@ -62,7 +62,7 @@ export function Layout239() {
                   className="rounded-image"
                 />
               </div>
-              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl font-serif">
+              <h3 className="mb-5 text-2xl font-bold md:mb-6 md:text-3xl md:leading-[1.3] lg:text-4xl">
                 A Vulnerable Community
               </h3>
               <p>

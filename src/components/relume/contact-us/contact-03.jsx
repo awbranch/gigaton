@@ -40,7 +40,9 @@ export function Contact3() {
             />
           </div>
           <div>
-            <Button title="Submit">Submit</Button>
+            <Button title="Submit" className="text-white bg-black px-4 py-2">
+              Submit
+            </Button>
           </div>
         </form>
       </div>

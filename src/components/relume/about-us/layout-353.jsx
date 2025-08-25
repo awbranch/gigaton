@@ -1,6 +1,5 @@
 "use client";
 
-import { Card } from "@relume_io/relume-ui";
 import React from "react";
 
 export function Layout353() {
@@ -20,7 +19,7 @@ export function Layout353() {
             </p>
           </div>
           <div>
-            <Card className="mb-8border-none sticky p-8" style={{ top: "30%" }}>
+            <Card className="mb-8 sticky p-8" style={{ top: "30%" }}>
               <div className="mb-3 md:mb-4">
                 <img
                   src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
@@ -37,7 +36,7 @@ export function Layout353() {
                 over 20 years.
               </p>
             </Card>
-            <Card className="mb-8border-none sticky p-8" style={{ top: "32%" }}>
+            <Card className="mb-8 sticky p-8" style={{ top: "32%" }}>
               <div className="mb-3 md:mb-4">
                 <img
                   src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
@@ -54,7 +53,7 @@ export function Layout353() {
                 promises.
               </p>
             </Card>
-            <Card className="mb-8border-none sticky p-8" style={{ top: "34%" }}>
+            <Card className="mb-8 sticky p-8" style={{ top: "34%" }}>
               <div className="mb-3 md:mb-4">
                 <img
                   src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
@@ -70,7 +69,7 @@ export function Layout353() {
                 in real time, on a dashboard for our subscribers.
               </p>
             </Card>
-            <Card className="mb-8border-none sticky p-8" style={{ top: "36%" }}>
+            <Card className="mb-8  sticky p-8" style={{ top: "36%" }}>
               <div className="mb-3 md:mb-4">
                 <img
                   src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
@@ -90,5 +89,16 @@ export function Layout353() {
         </div>
       </div>
     </section>
+  );
+}
+
+function Card({ children, className, style }) {
+  return (
+    <div
+      className={`border border-border-primary bg-background-primary ${className}`}
+      style={style}
+    >
+      {children}
+    </div>
   );
 }

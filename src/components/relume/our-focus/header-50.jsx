@@ -15,7 +15,12 @@ export function Header50() {
             Avoiding Methane Emissions in Southeast Asia is Critical.
           </h1>
           <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-            <Button title="Learn More">Learn More</Button>
+            <Button
+              title="Learn More"
+              className="text-white bg-black px-4 py-2"
+            >
+              Learn More
+            </Button>
           </div>
         </div>
       </div>
