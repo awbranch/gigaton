@@ -3,14 +3,17 @@ name: Rebuild and Publish
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: ["**"]
+
   repository_dispatch:
     types: [sanity-publish]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout code
@@ -24,8 +27,23 @@ jobs:
       - name: Install dependencies
         run: npm install --force
 
-      - name: Deploy to Cloudflare Workers via OpenNext
+      - name: Compute Cloudflare Environment from branch name
+        id: envprep
+        shell: bash
+        run: |
+          RAW="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
+          # sanitize: lowercase, non-alnum -> '-', trim '-', max 28 chars
+          SAFE=$(echo "$RAW" \
+            | tr '[:upper:]' '[:lower:]' \
+            | sed -E 's/[^a-z0-9]+/-/g' \
+            | sed -E 's/^-+|-+$//g' \
+            | cut -c1-28)
+          if [ -z "$SAFE" ]; then SAFE="dev"; fi
+          echo "CF_ENV=$SAFE" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy to Cloudflare
         run: npm run deploy
         env:
+          CF_ENV: ${{ steps.envprep.outputs.CF_ENV }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
