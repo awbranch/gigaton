@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import logoWide from "@/assets/logo-wide.svg";
+import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -24,7 +26,11 @@ export default function NavBar() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5">
             <span className="sr-only">Gigaton Finance</span>
-            <img alt="" src="/logo-wide.svg" className="h-[92px] w-auto" />
+            <Image
+              alt="Gigaton Logo"
+              src={logoWide}
+              className="h-[92px] w-auto"
+            />
           </Link>
         </div>
         <button

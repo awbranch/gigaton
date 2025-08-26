@@ -9,7 +9,7 @@ export default function Page() {
         <Section>
           <div className="ml-4 flex max-w-[600px] flex-col gap-3 md:ml-24">
             <div className="font-base font-semibold">About</div>
-            <h1 className="font-regular font-serif text-5xl leading-[1.2]">
+            <h1 className="text-style-h1">
               Missions are aspirational.
               <br />
               What we're doing is real.
