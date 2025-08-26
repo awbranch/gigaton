@@ -8,6 +8,7 @@
 @theme inline {
   --font-sans: var(--font-inter);
   --font-serif: var(--font-spectral);
+  --shadow-gig-paper: 0 0 64px -12px rgba(0, 0, 0, 0.14);
 }
 
 @theme {
