@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spectral.variable} ${inter.variable}`}>
+      <body className={`${spectral.variable} ${inter.variable} antialiased`}>
         <main>{children}</main>
       </body>
     </html>

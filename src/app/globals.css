@@ -2,14 +2,32 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-spectral);
+}
+
+@theme {
+  --text-5xl: 3.25rem; /* 52px - Desktop H2 52/120 */
+  --text-4xl: 2.625rem; /* 42px - Mobile H2 42/110 */
+  --text-3xl: 1.75rem; /* 28px - Desktop H4 28/130 */
+  --text-2xl: 1.5rem; /* 24px - Unspecified */
+  --text-xl: 1.25rem; /* 20px - Unspecified */
+  --text-lg: 1.125rem; /* 18px - Body Large 18/150 */
+  --text-base: 1rem; /* 16px - Body Regular 16/150 */
+  --text-sm: 0.875rem; /* 14px - Body Small 14/150 */
+  --text-xs: 0.75rem; /* 12px - Unspecified */
+
+  --color-gig-black: #000000;
+  --color-gig-white: #ffffff;
+  --color-gig-paper: #efefef;
+
+  --color-gig-yellow: #f7f700;
+  --color-gig-yellow-muted: #e7ea66;
+  --color-gig-yellow-vivid: #e3f600;
 }
 
 html {
@@ -17,9 +35,7 @@ html {
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: var(--foreground);
+  @apply font-sans;
 }
