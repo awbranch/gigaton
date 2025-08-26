@@ -1,23 +1,27 @@
 import Divider from "@/components/Divider";
 import Section from "@/components/Section";
+import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
     <>
-      <Section>
-        <div className="ml-4 flex max-w-[450px] flex-col gap-3 md:ml-24">
-          <h1 className="font-regular font-serif text-5xl leading-[1.2]">
-            Real Credits.
-            <br />
-            Real Impact.
-          </h1>
-          <p className="font-sans text-base leading-[1.5]">
-            At Gigaton Finance, we provide high-quality, transparent, and
-            community-aligned carbon credits to help avoid 1.02Gt of methane
-            emissions over twenty years. You read that right: 1.02Gt.
-          </p>
-        </div>
-      </Section>
+      <div className="text-gig-white bg-neutral-700">
+        <NavBar />
+        <Section>
+          <div className="ml-4 flex max-w-[450px] flex-col gap-3 md:ml-24">
+            <h1 className="font-regular font-serif text-5xl leading-[1.2]">
+              Real Credits.
+              <br />
+              Real Impact.
+            </h1>
+            <p className="font-sans text-base leading-[1.5]">
+              At Gigaton Finance, we provide high-quality, transparent, and
+              community-aligned carbon credits to help avoid 1.02Gt of methane
+              emissions over twenty years. You read that right: 1.02Gt.
+            </p>
+          </div>
+        </Section>
+      </div>
       <Divider />
       <Section>
         <div className="text-center">

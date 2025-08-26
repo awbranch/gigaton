@@ -1,14 +1,20 @@
 import Section from "@/components/Section";
+import NavBar from "@/components/NavBar";
 
 export default function Page() {
   return (
-    <Section>
-      <div className="mx-auto flex max-w-[600px] flex-col gap-3">
-        <div className="font-base font-semibold">Focus</div>
-        <h1 className="font-regular font-serif text-5xl leading-[1.2]">
-          Avoiding Methane Emissions in Southeast Asia is Critical.
-        </h1>
+    <>
+      <div className="text-gig-white bg-gray-700">
+        <NavBar />
+        <Section>
+          <div className="ml-4 flex max-w-[600px] flex-col gap-3 md:ml-24">
+            <div className="font-base font-semibold">Focus</div>
+            <h1 className="font-regular font-serif text-5xl leading-[1.2]">
+              Avoiding Methane Emissions in Southeast Asia is Critical.
+            </h1>
+          </div>
+        </Section>
       </div>
-    </Section>
+    </>
   );
 }
