@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Spectral, Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar1 } from "@/components/relume/navbar-01";
-import { Footer3 } from "@/components/relume/footer-03";
 
 const spectral = Spectral({
   variable: "--font-spectral",
@@ -28,9 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spectral.variable} ${inter.variable}`}>
-        <Navbar1 />
         <main>{children}</main>
-        <Footer3 />
       </body>
     </html>
   );
