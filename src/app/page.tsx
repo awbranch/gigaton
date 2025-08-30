@@ -1,10 +1,10 @@
 import Divider from "@/components/Divider";
 import Section from "@/components/Section";
-import NavBar from "@/components/NavBar";
 import clsx from "clsx";
 import Image from "next/image";
+import Hero from "@/components/Hero";
+import bgImg from "@/assets/Taman_Negara_Malaysia.jpg";
 
-import backgroundPng from "@/assets/home-movie-frame-1.jpg";
 import communitySvg from "@/assets/community.svg";
 import qualitySvg from "@/assets/quality.svg";
 import transparencySvg from "@/assets/transparency.svg";
@@ -35,43 +35,25 @@ const accountability = [
 
 export default function Home() {
   return (
-    <div className="w-full">
-      <div
-        className="text-gig-white"
-        style={{
-          background: `linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(${backgroundPng.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
+    <>
+      <Hero
+        imageLocation="Taman Negara _ Malaysia&nbsp;&nbsp;————&nbsp;&nbsp;4.6360° N, 102.4069° E"
+        backgroundImage={bgImg}
       >
-        <NavBar />
-        <section className="px-4 pt-10 pb-10 md:px-16 md:pt-6 md:pb-20">
-          <div
-            id="A"
-            className="relative flex min-h-[470px] w-full items-center"
-          >
-            <div className="ml-4 flex max-w-[450px] flex-col gap-3 pr-14 md:ml-24">
-              <h1 className="text-style-h1">
-                Real Credits.
-                <br />
-                Real Impact.
-              </h1>
-              <p className="font-sans text-base leading-[1.5]">
-                At Gigaton Finance, we provide high-quality, transparent, and
-                community-aligned carbon credits to help avoid 1.02Gt of methane
-                emissions over twenty years. You read that right: 1.02Gt.
-              </p>
-            </div>
-
-            <div className="absolute inset-y-0 right-0 flex items-center">
-              <span className="text-gig-yellow px-2 font-bold [text-orientation:sideways] [writing-mode:vertical-rl]">
-                Taman Negara_Malaysia ———— 4.6360° N, 102.4069° E
-              </span>
-            </div>
-          </div>
-        </section>{" "}
-      </div>
+        <div className="flex max-w-[500px] flex-col gap-3">
+          <h1 className="text-style-h1">
+            Real Credits.
+            <br />
+            Real Impact.
+          </h1>
+          <p className="text-style-body-large">
+            At Gigaton Finance, we provide high-quality, transparent, and
+            community-aligned carbon credits to help avoid 1.02Gt of methane
+            emissions over twenty years. <br />
+            You read that right: 1.02Gt.
+          </p>
+        </div>
+      </Hero>
       <Divider />
       <Section>
         <div className="text-center">
@@ -111,6 +93,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-    </div>
+    </>
   );
 }

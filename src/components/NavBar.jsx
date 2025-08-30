@@ -21,22 +21,22 @@ export default function NavBar() {
     <header>
       <nav
         aria-label="Global"
-        className="mx-auto flex items-center justify-between gap-x-4 py-6 pl-4 md:pl-16"
+        className="mx-auto flex items-center justify-between"
       >
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5">
+          <Link href="/" className="block">
             <span className="sr-only">Gigaton Finance</span>
             <Image
               alt="Gigaton Logo"
               src={logoWide}
-              className="h-[92px] w-auto"
+              className="h-[92.736px] w-auto"
             />
           </Link>
         </div>
         <button
           type="button"
           onClick={() => setMenuOpen(true)}
-          className="text-gig-black bg-gig-yellow m-0 inline-flex cursor-pointer items-center justify-center p-7"
+          className="text-gig-black bg-gig-yellow m-0 inline-flex h-[77px] w-[77px] cursor-pointer items-center justify-center"
         >
           <span className="sr-only">Open main menu</span>
           <Bars3Icon aria-hidden="true" className="size-5" />

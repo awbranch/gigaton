@@ -55,6 +55,22 @@
     letter-spacing: -0.56px;
     font-weight: 400;
   }
+
+  .text-style-body-large {
+    font-size: var(--text-lg);
+    font-family: var(--font-inter);
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-weight: 600;
+  }
+
+  .text-style-eyebrow {
+    font-size: var(--text-base);
+    font-family: var(--font-inter);
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-weight: 600;
+  }
 }
 
 html {
